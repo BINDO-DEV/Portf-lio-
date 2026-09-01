@@ -1,0 +1,307 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f6;
+    color: #26332e;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #1d5c4a, #319477);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    opacity: 0.85;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.versiculo {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.referencia {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    padding: 70px 0;
+}
+
+.destaque {
+    background: #eaf4f0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1d5c4a;
+}
+
+h3 {
+    margin: 25px 0 15px;
+    color: #285e4e;
+}
+
+
+/* CAIXAS DE TEXTO */
+
+.caixa {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.caixa p {
+    margin-bottom: 15px;
+}
+
+.caixa p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* VERSÍCULO */
+
+.versiculo-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.versiculo-card span {
+    font-size: 35px;
+}
+
+.versiculo-card p {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+
+/* PERGUNTAS */
+
+.perguntas {
+    display: grid;
+    gap: 15px;
+}
+
+.pergunta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.pergunta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pergunta span {
+    background: #1d5c4a;
+    color: white;
+
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
+/* PARTE FAMILIAR */
+
+.introducao-familiar {
+    font-size: 20px;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-style: italic;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.cartao {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-8px);
+}
+
+.cartao .icone {
+    font-size: 30px;
+}
+
+.cartao h3 {
+    font-size: 22px;
+}
+
+.cartao ul {
+    padding-left: 20px;
+}
+
+.cartao li {
+    margin-bottom: 12px;
+}
+
+
+/* CORES DOS CARTÕES */
+
+.verde {
+    border-top: 5px solid #36a269;
+}
+
+.amarelo {
+    border-top: 5px solid #e0b52d;
+}
+
+.vermelho {
+    border-top: 5px solid #d95757;
+}
+
+.azul {
+    border-top: 5px solid #4e8dcc;
+}
+
+
+/* FINAL */
+
+.final {
+    background: #183d34;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.final h2 {
+    color: white;
+}
+
+.versiculo-final {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.versiculo-final span {
+    font-size: 35px;
+}
+
+.versiculo-final p {
+    font-size: 23px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.mensagem-final {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: 18px;
+}
+
+.frase-final {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #102a24;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header .versiculo {
+        font-size: 20px;
+    }
+
+    .secao {
+        padding: 50px 0;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+
+    .caixa {
+        padding: 22px;
+    }
+  }
